@@ -1,0 +1,101 @@
+header .logo {
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: 'Roboto-ExtraBold';
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+
+}
+
+header {
+  transition: all 0.2s ease-in-out;
+}
+
+.logo img {
+  width: 40px;
+}
+
+header span {
+  margin-left: 10px;
+}
+
+.text-grad-orange {
+  background: linear-gradient(to left, var(--orange), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  padding: 10px 40px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  align-items: center;
+}
+
+.menu-bar {
+  background: linear-gradient(to right, var(--orange), var(--light-gray));
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  margin-bottom: 4px;
+  border-radius: 20px;
+}
+
+.menu:hover .menu-bar-small {
+  width: 35px;
+  transition: width 0.2s ease-in-out;
+
+  /*margin-bottom: 2px;*/
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.menu-bar.menu-bar-small {
+  background: linear-gradient(to right, var(--orange), var(--light-gray));
+
+  width: 25px;
+}
+
+.logoMain {
+  position: fixed;
+  width: 100%
+    /*right: -10%;*/
+    margin: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  margin-right: -100px;
+  margin-top: 100px;
+  /*bottom: 0;*/
+  justify-content: flex-end;
+  min-height: 100vh;
+
+}
+
+.logoMain img {
+  width: 420px;
+  opacity: 0.2;
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes logo {
+  from {
+    filter: grayscale(1);
+
+  }
+
+  to {
+    filter: grayscale(0);
+  }
+}
